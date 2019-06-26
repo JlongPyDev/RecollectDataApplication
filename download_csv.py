@@ -17,7 +17,7 @@ chrome_options = Options()
 chrome_options.add_argument("--headless")
 output_dir = r'C:\GIS-Long\REQUESTS\PWT\WasteIndustries_MapApplication_pickup_days\test_output'
 recollect_url = r"https://manage.recollect.net/admin"
-driver = webdriver.Chrome("C:\Users\Jlong\Downloads\chromedriver_win32\chromedriver.exe",chrome_options=chrome_options)
+driver = webdriver.Chrome("C:\Users\Jlong\Downloads\chromedriver_win32\chromedriver.exe", chrome_options=chrome_options)
 driver.get(recollect_url)
 #pagesource = driver.page_source
 
@@ -51,11 +51,12 @@ try:
     html = driver.page_source
     print html
 
-    #driver.find_element_by_xpath("//a[@href='/admin/area/Apex/waste/connector/default']//span["
-     #                            "@class='menu-text'][contains(.,'STFP Address Connector')]").click()
 
-    #WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH,
-     #"//button[@class='navbar-toggle menu-toggler pull-left']//span[@class='sr-only']"))).click()
+    driver.find_element_by_xpath("//a[@href='/admin/area/Apex/waste/connector/default']//span["
+                                 "@class='menu-text'][contains(.,'STFP Address Connector')]").click()
+
+    dl_direct = r'C:\Users\Jlong\Downloads'
+
 
 
     #print "Dropdown Found Worked"

@@ -85,6 +85,5 @@ def stopStartServices(server, port, adminUser, adminPass, stopStart, serviceList
 
     return
 
-#http://apexgis:6080/arcgis/admin/services/RecollectApplicationData/Recollect.MapServer
-getServiceList(server=r'apexgis', port='6080',adminUser='siteadmin',adminPass='apexGIS1')
+
 
